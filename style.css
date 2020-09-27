@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  background-color: #eee;
+}
+nav>li{
+  color: gainsboro;
+}
+.ab {
+  background-image: url("https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_1280.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+}
+.fakeimg {
+  height: 250px;
+  background: #aaa;
+}
+.bgimg, .bgimg2, .bgimg3 {
+  position: relative;
+  opacity: 0.75;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg {
+  background-image: url("https://source.unsplash.com/O453M2Liufs/1600x900");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 530px;
+}
+.bgimg2{
+  background-image: url("https://cdn.pixabay.com/photo/2015/11/19/06/19/dubai-1050418_1280.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height:600px;
+  width: auto;
+}
+.bgimg3{
+  background-image: url("https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_1033306540-1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height:650px;
+}
+.ls{
+  letter-spacing: 4px;
+}
+.material-icons.md-36 { 
+  font-size: 36px; 
+}
+.fsize{
+  font-size: 3.5em;
+}
+p{
+  font-size: 1.2em;
+}
+.fab{
+  font-size: 1.8em;
+}
+footer > .d-flex{
+  width: 25%;
+}
+@media only screen and (max-width:480px){
+  p{
+    font-size: 1em;
+  }
+  .fsize{
+    font-size: 2.5em;
+  }
+  footer > .d-flex{
+    width: 50%;
+  }
+} 
