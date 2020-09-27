@@ -2,7 +2,71 @@ body {
   margin: 0;
   background-color: #eee;
 }
-nav>li{
+#content{
+  display: none;
+}
+#loader{
+  display: flex;
+  height: 95vh;
+  align-items: center;
+  justify-content: center;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #aaa;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+nav > li {
   color: gainsboro;
 }
 .ab {
@@ -15,14 +79,15 @@ nav>li{
   height: 250px;
   background: #aaa;
 }
-.bgimg, .bgimg2, .bgimg3 {
+.bgimg,
+.bgimg2,
+.bgimg3 {
   position: relative;
   opacity: 0.75;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 .bgimg {
   background-image: url("https://source.unsplash.com/O453M2Liufs/1600x900");
@@ -30,45 +95,45 @@ nav>li{
   background-size: cover;
   height: 530px;
 }
-.bgimg2{
+.bgimg2 {
   background-image: url("https://cdn.pixabay.com/photo/2015/11/19/06/19/dubai-1050418_1280.jpg");
   background-attachment: fixed;
   background-size: cover;
-  height:600px;
+  height: 600px;
   width: auto;
 }
-.bgimg3{
+.bgimg3 {
   background-image: url("https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_1033306540-1.jpg");
   background-attachment: fixed;
   background-size: cover;
-  height:650px;
+  height: 650px;
 }
-.ls{
+.ls {
   letter-spacing: 4px;
 }
-.material-icons.md-36 { 
-  font-size: 36px; 
+.material-icons.md-36 {
+  font-size: 36px;
 }
-.fsize{
+.fsize {
   font-size: 3.5em;
 }
-p{
+p {
   font-size: 1.2em;
 }
-.fab{
+.fab {
   font-size: 1.8em;
 }
-footer > .d-flex{
+footer > .d-flex {
   width: 25%;
 }
-@media only screen and (max-width:480px){
-  p{
+@media only screen and (max-width: 480px) {
+  p {
     font-size: 1em;
   }
-  .fsize{
+  .fsize {
     font-size: 2.5em;
   }
-  footer > .d-flex{
+  footer > .d-flex {
     width: 50%;
   }
-} 
+}
